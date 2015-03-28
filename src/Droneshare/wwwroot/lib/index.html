@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" xmlns:ng="http://angularjs.org" xmlns:app="ignored"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" xmlns:ng="http://angularjs.org" xmlns:app="ignored"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9" xmlns:ng="http://angularjs.org" xmlns:app="ignored"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" xmlns:ng="http://angularjs.org" xmlns:app="ignored"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8" />
+    <base href="/">
+    <title ng-bind="'Droneshare' + title">Droneshare</title>
+    <meta name="description" content="Open-source drone sharing and control" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="dns-prefetch" href="//api.droneshare.com">
+    
+        <link rel="shortcut icon" href="/images/icon.png">
+    
+    <link href='https://api.tiles.mapbox.com/mapbox.js/v1.6.2/mapbox.css' rel='stylesheet' />
+
+    
+        <!--[if lte IE 8]> <script src="/scripts/libs/json3.js"></script> <script src="/scripts/libs/html5shiv-printshiv.js"></script> <![endif]-->
+        <link rel="stylesheet" href="/styles/styles.css" />
+        <script>
+            window.debugEnabled = true;
+            window.logos = {
+                parent: '/images/3drobotics.png',
+                son: '/images/droneshare.png',
+                vehicleMarkerActive: '/images/vehicle-marker-active.png',
+                vehicleMarkerInactive: '/images/vehicle-marker-inactive.png',
+                octocat: '/images/octocat-drone.jpg'
+            };
+        </script>
+    
+
+    <style>
+        [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak { display: none; }
+        ng\:form { display: block; }
+    </style>
+
+    
+        <meta property="og:image" content="/images/screenshot.png"/>
+    
+    <meta property="og:description" content="Open-source drone sharing and control"/>
+    <meta property="og:title" content="Droneshare mission log"/>
+    <meta property="og:site_name" content="Droneshare"/>
+    <meta property="fb:app_id" content="301251750005529"/>
+</head>
+<body class="ng-cloak">
+    <header header-nav class="container-fluid"></header>
+
+    <div class="container-fluid">
+        <div ng-view></div>
+    </div>
+
+    <div ng-include src="'/views/footer.html'"></div>
+
+    
+        <script data-main="/scripts/main.js" src="/scripts/libs/require.js"></script>
+    
+    <div ng-include src="'/helpers/facebook-share.html'"></div>
+    <div ng-include src="'/helpers/google-plus.html'"></div>
+    <div ng-include src="'/helpers/twitter-share.html'"></div>
+</body>
+</html>
