@@ -4,7 +4,8 @@
     __hasProp = {}.hasOwnProperty,
     __extends = function(child, parent) { for (var key in parent) { if (__hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; };
 
-  apiKey = "eb34bd67.megadroneshare";
+  apiKey = "bcafbbf3.7a364d7e0af95ca46c9ce23c434ac252";
+
 
   merge = function(obj1, obj2) {
     var k, newv, result, v;
